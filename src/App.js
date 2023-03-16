@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Form from "./components/Form";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import NonExist from "./components/NonExist";
+import Preview from "./components/Preview";
+import Resume from "./components/Resume";
 
-function App() {
+const App = () => {
+  const [allResume, setAllresume] = useState([])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Router>
+      <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/resume" element={<Resume allResume={allResume} setAllResume={setAllresume}/>} />
+          <Route path="/form" element={<Form allResume={allResume} setAllresume={setAllresume}/>} />
+          <Route path='/preview' element={<Preview/>} />
+          <Route path="/*" element={<NonExist/>}/>
+        </Routes>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;

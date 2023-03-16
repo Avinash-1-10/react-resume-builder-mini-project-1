@@ -1,0 +1,79 @@
+/* Colors */
+:root {
+    --primary-color: #1f618d;
+    --secondary-color: #34495e;
+    --text-color: #333;
+    --light-gray: #f7f7f7;
+    --dark-gray: #ccc;
+  }
+  
+  /* Styles for Template1 */
+  .template1-container {
+    display: flex;
+    background-color: rgb(0, 7, 10);
+    flex-direction: column;
+
+    align-items: center;
+    height: 100vh;
+    background-color: var(--light-gray);
+
+  }
+  
+  .template1-personalInfo-container {
+    background-color: rgb(241, 127, 241);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .template1-name {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    background-color: var(--light-gray);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .template1-number,
+  .template1-email,
+  .template1-age {
+    color: var(--secondary-color);
+    margin: 0.25rem 0;
+  }
+  
+  .template1-education-heading,
+  .template1-exp-heading,
+  .template1-summary-heading {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .template1-education,
+  .template1-exp,
+  .template1-summary {
+    margin: 0.5rem 0;
+  }
+  
+  .template1-contacts h3 {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  .template1-contacts h3::before {
+    content: '\2022';
+    margin-right: 0.5rem;
+    color: var(--dark-gray);
+  }
+  
+  .template1-education,
+  .template1-exp {
+    color: var(--text-color);
+    margin-left: 1.5rem;
+  }
+  
+  

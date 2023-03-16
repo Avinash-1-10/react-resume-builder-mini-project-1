@@ -1,0 +1,77 @@
+.form-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Align items vertically */
+    align-items: flex-start; /* Align items to the top */
+    max-width: 600px; /* Set a max width to the form */
+    width: 100%; /* Make the form full width */
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    width: 100%; /* Make the boxes full width */
+  }
+  
+  label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  input,
+  textarea {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    outline: none;
+    width: 100%; /* Make the inputs full width */
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #0077ff;
+  }
+  
+
+button {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    margin: 0 0.5rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #0077ff;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+button:hover {
+    background-color: #0057d1;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    transform: translateY(-0.2rem);
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    form {
+      max-width: 80%;
+    }
+  }
+  
